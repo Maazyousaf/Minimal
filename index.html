@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>three</title>
+
+    <style>
+    .first{
+        position: relative;
+        height:400px;
+        width:100%;
+    }
+
+
+
+    .f1{
+        position: absolute;
+        height:40px;
+        width:13%;
+        border:2px solid black;
+        cursor: pointer;
+        text-align: center;
+        font-family: calibri;
+        font-size: 25px;
+        letter-spacing: 3px;
+        left: 40%;
+        top:40px;
+    }
+
+    .f1:hover{
+        border:2px solid blue;
+        color:red;
+    }
+
+    .h1{
+        position: absolute;
+        cursor: pointer;
+        text-align: center;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        left: 27%;
+        top:37%;
+        opacity:0.8;
+    }
+
+
+
+    .h2{
+        position: absolute;
+        cursor: pointer;
+        text-align: center;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 18px;
+        left: 34%;
+        top:62%;
+        opacity:0.8;
+        color:grey;
+    }
+
+
+
+    .pic{
+        position:relative;
+        background-image: url("slide-1.jpg");
+        background-size: 100% 100%;
+        height:600px;
+        width:100%;
+        animation-name: imgs;
+       animation-delay: 6s;
+       animation-duration: 10s;
+       animation-iteration-count: infinite;
+       cursor: pointer;
+    }
+
+
+    .inpic{
+        position: absolute;
+        cursor: pointer;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 60px;
+        left: 50%;
+        top:37%;
+        color:white;
+        width: 50%;
+    }
+
+
+
+    @keyframes imgs{
+        0%{
+        background-image: url("slide-2.jpg");
+        background-size: 100% 100%;
+         }
+         50%{
+            background-image: url("slide-1.jpg");
+        background-size: 100% 100%;
+         }
+         100%{
+            background-image: url("slide-3.jpg");
+        background-size: 100% 100%;
+         }
+    }
+
+
+
+    .services{
+        position: relative;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 33px;
+        left: 28%;
+        top:70px;
+        width: 45%;
+        text-align:center;
+        opacity:0.8;
+    }
+
+
+
+    .responsive{
+        position:relative;
+        top:190px;
+        left:7%;
+        height: 350px;
+        width: 86%;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+
+
+
+    .responsive1, .responsive2, .responsive3{
+        position:absolute;
+        top:0%;
+        left:2%;
+        height: 350px;
+        width: 30%;
+        border:1px solid silver;
+        transition: 0.1s;
+    }
+
+
+    .responsive1:hover, .responsive2:hover, .responsive3:hover{
+        top:2%;}
+
+    .responsive2{left:35%;}
+    .responsive3{left:68%;}
+
+
+
+    .in1, .in2, .in3{
+        position:absolute;
+        top:-20%;
+        left:35%;
+        height: 120px;
+        width: 30%;
+        cursor: pointer;
+    }
+
+
+    .in1{
+        background-image: url("capture1.png");
+        background-size: 100% 100%;
+    }
+
+
+    .in2{
+        background-image: url("capture2.png");
+        background-size: 100% 100%;
+    }
+
+
+    .in3{
+        height:120px;
+        background-image: url("capture3.png");
+        background-size: 100% 100%;
+    }
+
+
+
+    .p3, .p33{
+        position: absolute;
+        font-size: 23px;
+        left: 27%;
+        top: 25%;
+        opacity: 0.9;
+    }
+
+    .p33{left:10%;}
+
+
+    .p4{
+        position: absolute;
+        font-size: 19px;
+        top: 43%;
+        font-family: calibri;
+        color:868686;
+        line-height: 1.4;
+        opacity: 0.7;
+
+    }
+
+
+
+
+    .website{
+        position: relative;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 33px;
+        left: 28%;
+        top:280px;
+        width: 45%;
+        text-align:center;
+        opacity:0.8;
+    }
+
+
+
+    .picbox{
+        position: relative;
+        height: 800px;
+        width:86%;
+        top:330px;
+        left: 7%;
+    }
+
+
+
+    .pic1, .pic2, .pic3, .pic4{
+        position: absolute;
+        height: 380px;
+        width:48%;
+    }
+
+
+    .pic1{
+        background-image: url("img-3.jpg");
+        background-size: 100% 100%;
+        }
+
+
+    .pic2{
+        background-image: url("img-2.jpg");
+        background-size: 100% 100%;
+        right:0%;
+        }
+
+
+
+    .pic3{
+        background-image: url("img-1.jpg");
+        background-size: 100% 100%;
+        bottom:0%;
+        }
+
+
+
+    .pic4{
+        background-image: url("img-4.jpg");
+        background-size: 100% 100%;
+        right:0%;
+        bottom: 0%;
+        }
+
+
+    
+
+        .b1{
+        position: relative;
+        height: 60px;
+        width:13%;
+        top:370px;
+        left: 40%;
+        font-size: 17px;
+        border: 2px solid black;
+        border-radius: 5px ;
+        background:white;
+        font-family:calibri;
+        cursor: pointer;
+    }
+    .b1:hover{
+        border:2px solid blue;
+        color:red;
+    }
+
+
+
+    .branding{
+        position: relative;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 37px;
+        left: 24%;
+        top:480px;
+        width: 45%;
+        text-align:center;
+        opacity:0.8;
+    }
+
+
+
+        .picbox2{
+        position: relative;
+        height: 350px;
+        width:86%;
+        top:530px;
+        left: 7%;
+    } 
+
+
+
+    .pic5{
+        background-image: url("img-5.jpg");
+        background-size: 100% 100%;
+        position: absolute;
+        height: 350px;
+        width:32%;
+        border:1px solid black;
+    }
+
+
+    .pic6{
+        background-image: url("img-6.jpg");
+        background-size: 100% 100%;
+        position: absolute;
+        height: 350px;
+        width:65%;
+        left:35%;
+        border:1px solid black;
+    }
+
+
+
+    .picbox3{
+        position: relative;
+        height: 350px;
+        width:86%;
+        top:560px;
+        left: 7%;
+    }
+
+
+    .pic7{
+        background-image: url("img-7.jpg");
+        background-size: 100% 100%;
+        position: absolute;
+        height: 350px;
+        width:65%;
+        left:0;
+    }
+
+
+
+    .pic8{
+        background-image: url("img-8.jpg");
+        background-size: 100% 100%;
+        position: absolute;
+        height: 350px;
+        left:68%;
+        width:32%;
+    }
+
+
+
+    .b2{
+        position: relative;
+        height: 60px;
+        width:16%;
+        top:590px;
+        left: 40%;
+        font-size: 18px;
+        border: 2px solid black;
+        border-radius: 5px ;
+        background:white;
+        font-family:calibri;
+        cursor: pointer;
+    }
+
+
+    .b2:hover{
+        border:2px solid blue;
+        color:red;
+    }
+
+
+
+    .picbox4{
+        position: relative;
+        height: 420px;
+        width:86%;
+        top:620px;
+        left: 7%;
+    }
+
+
+
+    .pic9, .pic10, .pic11{
+        position: absolute;
+        height: 420px;
+        left:0;
+        width:33.3%;
+        transition: transform 1s;
+    }
+
+    .pic9:hover, .pic10:hover, .pic11:hover{
+        transform:scale(1.1);
+      }
+
+
+    .mz, .mz1, .mz2{
+       
+        height:420px;
+        width:100%;
+    }
+
+    .pic10{
+        left: 33.5%;
+        /* background-image: url("img-11.jpg"); */
+        /* background-size: 100% 100%; */
+    }
+
+    .pic11{
+        left: 67%;
+        /* background-image: url("img-12.jpg"); */
+        /* background-size: 100% 100%; */
+    }
+
+
+
+    
+    .undrbox{
+        position: relative;
+        height: 80px;
+        width:86%;
+        top:620px;
+        left: 7%;
+    }
+
+
+
+    .b3{
+        position: relative;
+        height: 60px;
+        width:16%;
+        top:630px;
+        left: 40%;
+        font-size: 18px;
+        border: 2px solid black;
+        border-radius: 5px ;
+        background:white;
+        font-family:calibri;
+        cursor: pointer;
+    }
+
+
+    .b3:hover{
+        border:2px solid blue;
+        color:red;
+    }
+
+
+
+    #project{
+        background-image:url("hero.jpg");
+        background-size:100% 100%;	
+position:relative;
+height:300px;
+width:100%;
+top:770px;
+background-attachment:fixed;
+
+}
+
+
+#pro1, #pro2, #pro3{
+position:absolute;
+height:200px;
+width:14%;
+top:50px;
+color:white;
+transition-duration:5s;
+transition-property:all;
+}	
+#pro1{left:13%;}
+
+#pro2{left:45%;}
+
+#pro3{left:75%;}
+
+
+
+.minimal{
+        position: relative;
+        height: 400px;
+        width:90%;
+        top:400px;
+        left: 5%;
+    }
+
+
+
+    .min1{
+        position: absolute;
+        height: 200px;
+        width:30%;
+    }
+
+
+
+    .min2{
+        position: absolute;
+        height: 200px;
+        width:20%;
+        left:44%;
+    }
+
+
+    .min3{
+        position: absolute;
+        height: 200px;
+        width:20%;
+        left:75%;
+    }
+
+
+
+    .copy{
+        position: absolute;
+        height: 150px;
+        width:100%;
+        top:55%;
+    }
+
+
+    .incopy{
+        background-image:url("capture7.png");
+        background-size:100% 100%;
+        position: absolute;
+        height: 35px;
+        width:14%;
+        top:5%;
+        left:44%;
+        cursor: pointer;
+    }
+
+
+    .copy2{
+        position: absolute;
+        height: 100px;
+        width:50%;
+        top:35%;
+        left:24%;
+        text-align: center;
+        line-height: 1.4;
+        font-size:18px;
+        opacity:0.7;
+    }
+
+
+
+    .footer{
+        position: relative;
+        height: 260px;
+        width:100%;
+        top:410px;
+        left: 0%;
+        background: #F0F0F0;
+    }
+
+
+
+    .infooter{
+        position: absolute;
+        height: 130px;
+        width:70%;
+        bottom:0%;
+        left: 15%;
+        background-image:url("fotr.png");
+        background-size:100% 100%;
+    }
+
+
+
+    </style>
+</head>
+<body>
+        <script>
+                AOS.init();
+              </script>
+
+
+
+   <div class="first">
+       <div class="f1"><p style="margin-top:4px;position:absolute;left:16%; ">MINIMAL</p></div>
+       <p class="h1">Minimal leads you for a better site</p>
+       <p class="h2">Lorem ipsum dolor sit amet far from the countries</p>
+   </div> 
+   <div class="pic">
+       <div class="inpic" data-aos="fade-up" data-aos-duration="1500">Create A Motivational Template
+           <p style="opacity:0.7;font-size:14px;margin-top:35px;">BRANDING</p>
+       </div>
+   </div>
+   <div class="services"data-aos="fade-up" data-aos-duration="2500">Our Services
+       <p style="font-size:20px;color:grey;margin-top:25px;">
+           Far far away, behind the word mountains, far from the countries<br> Vokalia and Consonantia, there live the blind texts.</p>
+   </div>
+
+   <div class="responsive">
+        <div class="responsive1">
+                <div class="in1"></div>
+                <p class="p3">RESPONSIVE</p>
+                <div style="margin-left:44px;">
+                <p class="p4" style="text-align: center;">Far far away, behind the word <br>mountains, far from the countries<br> 
+                    Vokalia and Consonantia,<br>live the blind texts</p></div>
+        </div>
+        <div class="responsive2">
+                <div class="in2"></div>
+                <p class="p3 p33">Compatible to all browser</p>
+                <div style="margin-left:44px;">
+                <p class="p4" style="text-align: center;">Far far away, behind the word <br>mountains, far from the countries<br> 
+                    Vokalia and Consonantia,live <br>the blind texts</p></div>
+        </div>
+        <div class="responsive3">
+                <div class="in3"></div>
+                <p class="p3">WEB DESIGN</p> 
+                <div style="margin-left:44px;">
+                        <p class="p4" style="text-align: center;">Far far away, behind the word <br>mountains, far from the countries<br> 
+                         Vokalia and Consonantia,<br>live the blind texts</p></div>
+                
+        </div>
+   </div>
+
+   <div class="website">Our Website</div>
+   <div class="picbox">
+       <div class="pic1" data-aos="fade-up" data-aos-duration="2500"></div>
+       <div class="pic2" data-aos="fade-up" data-aos-duration="2000"></div>
+       <div class="pic3" data-aos="fade-up" data-aos-duration="1500"></div>
+       <div class="pic4" data-aos="fade-up" data-aos-duration="1000"></div>
+   </div>
+
+   <button class="b1">See More Projects</button>
+
+   <div class="branding">Branding</div>
+
+   <div class="picbox2">
+       <div class="pic5" data-aos="fade-up-right" data-aos-duration="2500"></div>
+       <div class="pic6" data-aos="fade-up-left" data-aos-duration="2500"></div>
+   </div>
+
+   <div class="picbox3">
+       <div class="pic7" data-aos="fade-up" data-aos-duration="2000"></div>
+       <div class="pic8" data-aos="fade-up" data-aos-duration="2500"></div>
+   </div>
+
+   <button class="b2">See More Brands</button>
+
+   <div class="picbox4">
+       <div class="pic9">
+           <!-- jgfyudyudtudyudyud -->
+           <img class="mz" src="img-9.jpg" alt="">
+       </div>
+       <div class="pic10">
+            <img class="mz1" src="img-11.jpg" alt="">
+       </div>
+       <div class="pic11">
+            <img class="mz2" src="img-12.jpg" alt="">
+       </div>
+   </div>
+   <div class="undrbox" data-aos="fade-up" data-aos-duration="2000">
+
+           <div style="margin-left:15%;">
+            <p style="font-size:22px;margin-top:0;position:absolute;opacity:0.9;">Bag</p>
+           <p style="font-size:19px;margin-top:3%;color:grey;position:absolute;">$48</p></div>
+
+           <div style="margin-left:46%;">
+           <p style="font-size:22px;margin-top:0;position:absolute;opacity:0.9;">Arigato Shoes</p>
+            <p style="font-size:19px;margin-top:3%;left:50%;color:grey;position:absolute;">$109</p></div>
+
+
+            <div style="margin-left:80%;">
+                    <p style="font-size:22px;margin-top:0;position:absolute;opacity:0.9;">New Blance Shoes</p>
+                     <p style="font-size:19px;margin-top:3%;left:85%;color:grey;position:absolute;">$89</p></div>
+   </div>
+
+
+   <button class="b3">See More Product</button>
+
+
+
+   <div id="project">
+
+        <div id="pro1">
+            <p style="text-align:center;font-family:calibri;font-size:65px;position:absolute;top:-30px;font-weight: bold;">130</p>
+            <p style="text-align:center;font-size:16px;opacity:0.8;position:absolute;top:80%;letter-spacing: 2px;">WEBSITE</p>
+        </div>
+    
+        <div id="pro2">
+                <p style="text-align:center;font-family:calibri;font-size:65px;position:absolute;top:-30px;font-weight: bold;">1450</p>
+                <p style="text-align:center;font-size:16px;opacity:0.8;position:absolute;top:80%;letter-spacing: 1px;left:15%;">BRANDING</p>
+        </div>
+        <div id="pro3">
+    
+                <p style="text-align:center;font-family:calibri;font-size:65px;position:absolute;top:-30px;font-weight: bold;">7497</p>
+                <p style="text-align:center;font-size:16px;opacity:0.8;position:absolute;top:80%;letter-spacing: 1px;left:15%;">PRODUCTS</p>
+        </div>
+
+        <div class="minimal">
+            <div class="min1">
+                <p style="text-align:left;font-size:23px;position:absolute;opacity:0.9;top:-20px;">
+                    Minimal</p>
+                    <p style="text-align:left;font-size:18px;position:absolute;color:grey;top:27px; line-height:1.5;">
+                        Far far away, behind the word mountains, far from the countries
+                     Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
+                      right at the coast of the Semantics.</p>
+            </div>
+
+            <div class="min2">
+            <p style="text-align:left;font-size:23px;position:absolute;opacity:0.9;top:-20px;">
+                    Our Services</p>
+                    <p style="text-align:left;font-size:18px;position:absolute;color:grey;top:27px; line-height:1.8;">
+                            Videos<br>
+                            Photography<br>
+                            Editing Photos<br>
+                            Newsletter</b>
+                            API<br>
+                            FAQ / Contact</p>
+            </div>
+
+
+            <div class="min3">
+                    <p style="text-align:left;font-size:23px;position:absolute;opacity:0.9;top:-20px;">
+                            Information</p>
+                            <p style="color:grey;text-align:left;font-size:18px;position:absolute;top:27px; line-height:1.8;">
+                                    Terms & Condition<br>
+                                    License<br>
+                                    Privacy & Policy<br>
+                                    Contact Us<br>
+                    </div>
+
+                    <div class="copy">
+                        <div class="incopy"></div>
+                        <div class="copy2"><p class="lastp">Copyright Minimal. All Rights Reserved.<br>
+                                Made with  by FreeHTML5.co / Demo Images: Gessato</p></div>
+                    </div>
+        </div>
+
+        <div class="footer">
+            <div class="infooter"></div>
+        </div>
+</body>
+</html>
